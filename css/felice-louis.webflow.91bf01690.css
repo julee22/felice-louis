@@ -244,7 +244,7 @@ body {
   min-height: 100%;
   background-color: #fff;
   font-family: Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   color: #333
 }
@@ -2260,7 +2260,6 @@ h4 {
 p {
   /* margin-bottom: 10px; */
   color: #000;
-  font-size: 18px;
   line-height: 30px;
 }
 
@@ -2322,7 +2321,7 @@ label {
   background-color: transparent;
   font-family: Centaur, sans-serif;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.75px;
 }
 
@@ -2451,18 +2450,15 @@ label {
 }
 
 .date {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   font-family: 'Edwardian Alt', sans-serif;
   font-size: 50px;
   font-weight: 400;
   text-align: center;
 }
-
-p.date {
-  font-family: 'Edwardian Alt', sans-serif;
-  font-weight: 700;
+#blurb {
+  margin-bottom: 30px;
 }
-
 
 #blurb span {
   font-family: 'Edwardian Script', sans-serif;
@@ -2492,6 +2488,7 @@ p.date {
   margin: 40px auto 10px;
   background-color: #7b8ea3;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .form-3 {
