@@ -244,7 +244,7 @@ body {
   min-height: 100%;
   background-color: #fff;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   color: #333
 }
@@ -2221,7 +2221,7 @@ textarea.w-input, textarea.w-select {
 
 h1 {
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-family: 'Edwardian Script', sans-serif;
   color: #000;
   font-size: 50px;
@@ -2260,7 +2260,7 @@ h4 {
 p {
   /* margin-bottom: 10px; */
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
 }
 
@@ -2322,7 +2322,7 @@ label {
   background-color: transparent;
   font-family: Centaur, sans-serif;
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.75px;
 }
 
@@ -2452,11 +2452,17 @@ label {
 
 .date {
   margin-bottom: 40px;
-  font-family: 'Edwardian Script', sans-serif;
+  font-family: 'Edwardian Alt', sans-serif;
   font-size: 50px;
   font-weight: 400;
   text-align: center;
 }
+
+p.date {
+  font-family: 'Edwardian Alt', sans-serif;
+  font-weight: 700;
+}
+
 
 #blurb span {
   font-family: 'Edwardian Script', sans-serif;
@@ -2591,9 +2597,9 @@ input[type='radio']:checked ~ .radio-button {
   padding-right: 10px;
   padding-bottom: 20px;
   padding-left: 10px;
-  -webkit-justify-content: space-around;
+  -webkit-justify-content: space-evenly;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: space-evenly;
   justify-items: start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -2670,7 +2676,7 @@ input[type='radio']:checked ~ .radio-button {
 }
 
 .text-span-2 {
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -2932,6 +2938,21 @@ input[type='radio']:checked ~ .radio-button {
   font-family: 'Centaur';
   src: url('https://uploads-ssl.webflow.com/61d52413e615ca9ee0741835/61da71affa042149b2665641_CENTAUR.TTF') format('truetype');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Edwardian Alt';
+  src: url('../font/EDWARDIAN-ALT.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Edwardian Alt Bold';
+  src: url('../font/EDWARDIAN-ALT-BOLD.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
