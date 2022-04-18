@@ -2231,18 +2231,18 @@ h1 {
 }
 
 h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 38px;
-  line-height: 48px;
+  margin-top: 10px;
+  /* margin-bottom: 25px; */
+  color: #ba8e3c;
+  font-size: 24px;
+  line-height: 40px;
   font-weight: 700;
 }
 
 h3 {
   margin-top: 10px;
   margin-bottom: 25px;
-  color: #6b6b6b;
+  color: #ccc;
   font-size: 24px;
   line-height: 40px;
   font-weight: 400;
@@ -2670,7 +2670,6 @@ input[type='radio']:checked ~ .radio-button {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
 }
 
 .text-span-2 {
@@ -2681,6 +2680,7 @@ input[type='radio']:checked ~ .radio-button {
 
 .radio-button-label {
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .image-8 {
@@ -2698,6 +2698,7 @@ input[type='radio']:checked ~ .radio-button {
 .info {
   width: 60%;
   margin: 0px auto;
+  text-align: center;
 }
 
 .scroll-down {
