@@ -2670,6 +2670,7 @@ input[type='radio']:checked ~ .radio-button {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 
 .text-span-2 {
@@ -2698,7 +2699,6 @@ input[type='radio']:checked ~ .radio-button {
 .info {
   width: 60%;
   margin: 0px auto;
-  text-align: center;
 }
 
 .scroll-down {
