@@ -43,26 +43,31 @@
             <div class="col col-md-7">
                 <section id="rsvp">
                     <h2>Come celebrate with Louis and Felice</h2>
-                    <p class="mb-3"><span class="reset">Please let us know if you can join us by</span> <span class="special-font">July&nbsp;12,&nbsp;2026</span></p>
+                    <p class="mb-3">Please let us know if you can join us by July&nbsp;12,&nbsp;2026</p>
 
                     <form id="my-form"
                         method="POST"
                         action="https://script.google.com/macros/s/AKfycbzfByaQYNPwxdLwGV0T36OUG0f0OvHLKtSGr7vqR3n-tUBUpj6CGm4Jqve8fcZgnkeH/exec">
                         <div class="input-group">
-                            <input id="Guest" type="text" class="form-control" name="Guest" placeholder="Your name" required>
+                            <input id="Guest" type="text" class="form-control special-font" name="Guest" placeholder="Your full name" required>
                         </div>
                         <div class="radio-wrapper">
-                            <div class="radio reset special-font">
+                            <div class="radio reset">
                                 <input type="radio" id="attending-yes" name="Attending" value="yes" checked>
-                                <label for="attending-yes">I'm going</label>
+                                <label for="attending-yes">Going</label>
                             </div>
-                            <div class="radio reset special-font">
+                            <div class="radio reset">
                                 <input type="radio" id="attending-no" name="Attending" value="No">
-                                <label for="attending-no">I can't go</label>
+                                <label for="attending-no">Can't make it</label>
                             </div>
                         </div>
-                        <input class="btn mt-3 special-font" type="submit" value="Submit answer" data-wait="Please wait..." class="submit-button" >
+                        <input class="btn mt-3 special-font" type="submit" value="Send answer" data-wait="Please wait..." class="submit-button" >
                     </form>
+
+                    <div id="success-msg" class="success-message yellow p-3" tabindex="-1" role="region" aria-label="RSVP Form success">
+                        <h3>Thank you for responding!</h3>
+                        <p class="mb-0">If there are any changes to your response, please reach out to us or fill out this form again!<br>
+                    </p>
                 </section>
             </div>
         </div>

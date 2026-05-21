@@ -16,7 +16,6 @@ body {
   background-image: url(../images/plaid-bg.svg);
   background-repeat: repeat;
   background-size: cover;
-  text-transform: uppercase;
 }
 
 .mobile-only {
@@ -34,16 +33,25 @@ hr.vertical {
   border-right: white 4px solid;
 }
 
+h1, h2, h3, .special-font {
+  font-family: 'Genice Writing', sans-serif;
+  text-transform: uppercase;
+}
+
 .reset {
   text-transform: initial;
 }
 
-h1, h2, h3, .special-font {
-  font-family: 'Genice Writing', sans-serif;
+.special-font {
+  font-size: large;
 }
 
 h2 {
   font-size: 16pt;
+}
+
+h3 {
+  font-size: 14pt;
 }
 
 p {
@@ -98,6 +106,12 @@ section {
   margin-right: calc(var(--section-padding) * -1);
 }
 
+.success-message {
+  margin-top: var(--section-padding);
+  margin-left: calc(var(--section-padding) * -1);
+  margin-right: calc(var(--section-padding) * -1);
+}
+
 #couple-image {
   background-image: url(../images/couple.svg);
   background-repeat: no-repeat;
@@ -135,10 +149,6 @@ input[type="text"] {
   opacity: 0;
 }
 
-.radio label {
-  font-size:  1.3em;
-}
-
 .radio label::before {
   content: '';
   display: inline-block;
@@ -152,14 +162,19 @@ input[type="text"] {
 
 .radio input:checked ~ label::before {
   background-color: var(--dark-brown);
+  background-image: url(../images/checkmark.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .btn {
-  width: 100%;
+  min-width: 200px;
+  padding: .35em 1.5em;
   background-color: var(--off-white);
   border: 2px solid var(--dark-brown);
   color: var(--dark-brown);
-  font-size: large;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .btn:hover {
