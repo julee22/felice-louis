@@ -78,8 +78,8 @@ section {
 
 #main-invite {
   background-image: url(../images/cloud-bg.svg);
-  background-repeat: no-repeat;
-  background-size: 90%;
+  background-repeat: repeat-x;
+  background-size: 50%;
   background-position: center 1em;
   padding-top: 1.5em;
 }
@@ -111,7 +111,7 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
-  height: calc(100% - 1rem);
+  height: calc(100%);
 }
 
 /* FORM */
@@ -203,10 +203,15 @@ input[type="text"] {
   #woodstock-image {
     min-height: 125px;
     margin-right: -2em;
+    height: calc(100% - 1rem);
   }
 }
 
 @media (max-width: 768px) {
+  #main-invite {
+    background-size: 90%;
+  }
+
   #couple-image {
     background-size: 100% auto;
     max-width: 200px;
