@@ -183,7 +183,9 @@ input[type="text"] {
   border: 2px solid var(--dark-brown);
 }
 
-
+.modal.show {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 
 

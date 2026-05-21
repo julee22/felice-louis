@@ -17,3 +17,11 @@ window.addEventListener("load", function() {
         })
     });
 });
+
+
+$(document).ready(function () {
+  $('[data-toggle="modal"]').on('click', function () {
+    console.log('clicked TEST');
+    $('#myModal').addClass('show');
+  });
+});
