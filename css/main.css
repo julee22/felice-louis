@@ -17,6 +17,11 @@ body {
   background-repeat: repeat;
   background-size: cover;
 }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 980px;
+  }
+}
 
 .mobile-only {
   display: none;
@@ -36,6 +41,7 @@ hr.vertical {
 h1, h2, h3, .special-font {
   font-family: 'Genice Writing', sans-serif;
   text-transform: uppercase;
+  color: var(--dark-brown);
 }
 
 .reset {
@@ -46,8 +52,16 @@ h1, h2, h3, .special-font {
   font-size: large;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h1 span {
+  font-size: 2rem;
+}
+
 h2 {
-  font-size: 16pt;
+  font-size: 1.7rem;
 }
 
 h3 {
@@ -84,19 +98,36 @@ section {
   padding: calc(var(--section-padding) * 1.25) var(--section-padding);
 }
 
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
 #main-invite {
   background-image: url(../images/cloud-bg.svg);
   background-repeat: repeat-x;
-  background-size: 50%;
+  background-size: auto 45%;
   background-position: center 1em;
-  padding-top: 1.5em;
+  padding-top: 5%;
+  animation: floating-bg 60s linear infinite;
+}
+
+@keyframes floating-bg {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 50vw;
+  }
 }
 
 #snoopy {
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
-  width: 60%;
-  max-width: 250px;
+  width: 50%;
+  max-width: 210px;
 }
 
 #details {
@@ -198,19 +229,24 @@ input[type="text"] {
 
 @font-face {
   font-family: 'Effra';
-  src: url('../font/Effra_Std_Rg.ttf') format('truetype');
+  src: url('../font/Laila-Medium.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
 
 /* Mobile */
 @media (max-width: 480px) {
+  section {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
   hr.vertical {
     margin: 0;
   }
 
   #main-invite {
-    background-size: 345px;
+    background-size: auto 40%;
   }
 
   #details {
@@ -226,7 +262,15 @@ input[type="text"] {
 
 @media (max-width: 768px) {
   #main-invite {
-    background-size: 90%;
+    padding-top: 10vh;
+  }
+  #snoopy {
+    max-width: 280px;
+  }
+
+  .title {
+    flex-direction: column;
+    text-align: center;
   }
 
   #couple-image {

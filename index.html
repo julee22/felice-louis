@@ -20,8 +20,10 @@
 <body class="body">
     <div class="container">
         <section class="text-center" id="main-invite">
-            <h1 style="margin-top: 3em;">A little PEANUT <span class="d-block small">is on the way</span></h1>
-            <img src="images/snoopy.svg" alt="Baby snoopy looking up" id="snoopy">
+            <div class="title">
+                <h1 class="order-md-2">A little PEANUT <span class="d-block">is on the way</span></h1>
+                <img class="order-md-1" src="images/snoopy.svg" alt="Baby snoopy looking up" id="snoopy">
+            </div>
             <div class="yellow" id="details">
                 <p class="p-3 mb-0">
                     August 02 2026
@@ -44,8 +46,8 @@
             </div>
             <div class="col col-md-7">
                 <section id="rsvp">
-                    <h2>Come celebrate with Louis and Felice</h2>
-                    <p class="mb-3">Please let us know if you can join us by July&nbsp;12,&nbsp;2026</p>
+                    <h2>Celebrate with Louis and Felice</h2>
+                    <p class="mb-3">Please let us know if you can join us by July&nbsp;12,&nbsp;2026.</p>
 
                     <form id="my-form"
                         method="POST"
@@ -66,7 +68,7 @@
                         <input class="btn mt-3 special-font" type="submit" value="Send answer" data-wait="Please wait..." class="submit-button" >
                     </form>
 
-                    <div id="success-msg" class="success-message yellow p-3" tabindex="-1" role="region" aria-label="RSVP Form success">
+                    <div id="success-msg" class="success-message yellow p-3" tabindex="-1" role="region" aria-label="RSVP Form success" style="display: none;">
                         <h3>Thank you for responding!</h3>
                         <p class="mb-0">If there are any changes to your response, please reach out to us or fill out this form again!<br>
                     </p>

@@ -22,6 +22,10 @@ window.addEventListener("load", function() {
 $(document).ready(function () {
   $('[data-toggle="modal"]').on('click', function () {
     console.log('clicked TEST');
-    $('#myModal').addClass('show');
+    $('#myModal').modal('show');
+  });
+  $('[data-dismiss="modal"]').on('click', function () {
+    console.log('clicked hide');
+    $('#myModal').modal('hide');
   });
 });
