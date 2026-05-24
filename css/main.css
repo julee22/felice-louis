@@ -16,6 +16,7 @@ body {
   background-image: url(../images/plaid-bg.svg);
   background-repeat: repeat;
   background-size: cover;
+  font-family: 'Genice Writing', sans-serif;
 }
 @media (min-width: 1200px) {
   .container {
@@ -38,30 +39,28 @@ hr.vertical {
   border-right: white 4px solid;
 }
 
-h1, h2, h3, .special-font {
-  font-family: 'Genice Writing', sans-serif;
-  text-transform: uppercase;
-  color: var(--dark-brown);
-}
-
-.reset {
-  text-transform: initial;
-}
-
-.special-font {
-  font-size: large;
-}
-
 h1 {
-  font-size: 2.5rem;
+  font-family: 'Peanut', cursive;
+  color: var(--dark-brown);
+  font-size: 3.5rem;
+  line-height: 0.9;
 }
 
 h1 span {
   font-size: 2rem;
 }
 
+h2, h3 {
+  text-transform: uppercase;
+  color: var(--dark-brown);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -70,13 +69,14 @@ h3 {
 
 p {
   letter-spacing: 0.08em;
-  font-family: 'Effra', sans-serif;
+  font-family: 'Genice Writing', sans-serif;
 }
 
 a {
   text-decoration: underline dashed;
   color: var(--dark-brown);
   cursor: pointer;
+  margin-bottom: 0.2em;
 }
 
 #registry-link {
@@ -95,7 +95,7 @@ section {
   border: 2px solid var(--pale-yellow);
   margin: 1rem 0;
   color: var(--dark-brown);
-  padding: calc(var(--section-padding) * 1.25) var(--section-padding);
+  padding: calc(var(--section-padding) * 1.25) var(--section-padding) 0;
 }
 
 .title {
@@ -228,8 +228,8 @@ input[type="text"] {
 }
 
 @font-face {
-  font-family: 'Laila';
-  src: url('../font/Laila-Medium.ttf') format('truetype');
+  font-family: 'Peanut';
+  src: url('../font/Peanut\ Toast.otf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
@@ -247,6 +247,7 @@ input[type="text"] {
 
   #main-invite {
     background-size: auto 40%;
+    padding-top: 5vh;
   }
 
   #details {
@@ -261,9 +262,6 @@ input[type="text"] {
 }
 
 @media (max-width: 768px) {
-  #main-invite {
-    padding-top: 10vh;
-  }
   #snoopy {
     max-width: 280px;
   }

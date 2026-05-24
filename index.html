@@ -21,24 +21,26 @@
     <div class="container">
         <section class="text-center" id="main-invite">
             <div class="title">
-                <h1 class="order-md-2">A little PEANUT <span class="d-block">is on the way</span></h1>
+                <p class="uppercase" style="font-size: x-small;">Come and celebrate with the Zhangs</p>
+                <h1 class="order-md-2 mt-3">A little PEANUT <span class="d-block">is on the way</span></h1>
                 <img class="order-md-1" src="images/snoopy.svg" alt="Baby snoopy looking up" id="snoopy">
             </div>
             <div class="yellow" id="details">
-                <p class="p-3 mb-0">
+                <p class="p-2 mb-0 order-md-2">
                     August 02 2026
-                </p>
+                    <br/>
+                <!-- </p>
                 <hr class="divider vertical">
-                <p class="p-3 mb-0">
-                    Park Avenue Place Tower&nbsp;A
-                    <a class="d-block small" data-toggle="modal" href="#myModal">Rooftop Access</a>
-                    <a class="d-block small" href="https://maps.app.goo.gl/RoEEcDbVQGrnT8oy6">Google Maps</a>
-                </p>
-                <hr class="divider vertical">
-                <p class="p-3 mb-0">
+                <p class="p-2 mb-0"> -->
                     2:00&nbsp;PM - 7:00&nbsp;PM
                 </p>
+                <hr class="divider vertical">
+                <p class="p-2 mb-0 order-md-1">
+                    Park Avenue Place Tower&nbsp;A
+                    <a class="d-block small" href="https://maps.app.goo.gl/RoEEcDbVQGrnT8oy6">Google Maps</a>
+                </p>
             </div>
+            <a class="d-block small mt-3 mb-3" data-toggle="modal" href="#myModal">How to get to the party room</a>
         </section>
         <div class="row justify-content-center">
             <div class="col-12 col-md-3">
@@ -46,26 +48,25 @@
             </div>
             <div class="col col-md-7">
                 <section id="rsvp">
-                    <h2>Celebrate with Louis and Felice</h2>
                     <p class="mb-3">Please let us know if you can join us by July&nbsp;12,&nbsp;2026.</p>
 
                     <form id="my-form"
                         method="POST"
                         action="https://script.google.com/macros/s/AKfycbzfByaQYNPwxdLwGV0T36OUG0f0OvHLKtSGr7vqR3n-tUBUpj6CGm4Jqve8fcZgnkeH/exec">
                         <div class="input-group">
-                            <input id="Guest" type="text" class="form-control special-font" name="Guest" placeholder="Your full name" required>
+                            <input id="Guest" type="text" class="form-control " name="Guest" placeholder="Your full name" required>
                         </div>
                         <div class="radio-wrapper">
-                            <div class="radio reset">
+                            <div class="radio ">
                                 <input type="radio" id="attending-yes" name="Attending" value="yes" checked>
                                 <label for="attending-yes">Going</label>
                             </div>
-                            <div class="radio reset">
+                            <div class="radio ">
                                 <input type="radio" id="attending-no" name="Attending" value="No">
                                 <label for="attending-no">Can't make it</label>
                             </div>
                         </div>
-                        <input class="btn mt-3 special-font" type="submit" value="Send answer" data-wait="Please wait..." class="submit-button" >
+                        <input class="btn mt-3 " type="submit" value="Send answer" data-wait="Please wait..." class="submit-button" >
                     </form>
 
                     <div id="success-msg" class="success-message yellow p-3" tabindex="-1" role="region" aria-label="RSVP Form success" style="display: none;">
@@ -79,17 +80,19 @@
             <div class="col-md-10">
                 <section id="registry" class="yellow">
                     <div class="row justify-content-center">
-                        <div class="col-8 col-md-9">
+                        <div class="col-12">                            
                             <h2>Your presence is the greatest gift</h2>
-                            <p class="reset">but if you’d like to help us prepare for the baby, we’ve created a registry here:</p>
+                        </div>
+                        <div class="col-8 col-md-9">
+                            <p class="">but if you’d like to help us prepare for the baby, we’ve created a registry here:</p>
                             
-                            <a id="registry-link" class="special-font reset desktop-only" href="https://maps.app.goo.gl/RoEEcDbVQGrnT8oy6">babyregistry.com/louis-felice</a>
+                            <a id="registry-link" class=" desktop-only" href="https://maps.app.goo.gl/RoEEcDbVQGrnT8oy6">babyregistry.com/louis-felice</a>
                         </div>
                         <div class="col-4 col-md-3">
                             <div id="woodstock-image"></div>
                         </div>
                         <div class="col-12 mobile-only">
-                            <a id="registry-link" class="special-font reset d-block" href="https://maps.app.goo.gl/RoEEcDbVQGrnT8oy6">babyregistry.com/louis-felice</a>
+                            <a id="registry-link" class=" d-block" href="https://maps.app.goo.gl/RoEEcDbVQGrnT8oy6">babyregistry.com/louis-felice</a>
                         </div>
                     </div>
                 </section>
@@ -103,7 +106,7 @@
             <!-- Modal content-->
             <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title special-font">How to Access the Rooftop</h3>
+                <h3 class="modal-title ">How to Access the Rooftop</h3>
             </div>
             <div class="modal-body">
                 <p>A keycard is required to operate the elevator. Please contact Felice or Louis when you arrive and head to the rooftop floor!</p>
