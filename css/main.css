@@ -1,7 +1,7 @@
 :root {
   --off-white : #fffbf8;
   --pale-yellow : #fff3b5;
-  --pale-brown : #d4c5b6;
+  --pale-brown : #bcbfc5;
   --dark-brown : #4c352f;
 }
 
@@ -18,9 +18,10 @@ body {
   background-size: cover;
   font-family: 'Genice Writing', sans-serif;
 }
+
 @media (min-width: 1200px) {
   .container {
-    max-width: 980px;
+    max-width: 750px;
   }
 }
 
@@ -97,6 +98,7 @@ section {
   margin: 1rem 0;
   color: var(--dark-brown);
   padding: calc(var(--section-padding) * 1.25) var(--section-padding);
+  position: relative;
 }
 
 .title {
@@ -126,7 +128,6 @@ section {
 }
 
 #snoopy {
-  margin-top: 2.5rem;
   margin-bottom: 1.5rem;
   width: 50%;
   max-width: 210px;
@@ -137,6 +138,11 @@ section {
   justify-content: center;
   margin-left: calc(var(--section-padding) * -1);
   margin-right: calc(var(--section-padding) * -1);
+  gap: 30px;
+}
+
+#details p {
+  margin-top: 1rem;
 }
 
 .success-message {
@@ -150,7 +156,24 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
-  height: calc(100% - 1rem);
+  height: calc(100% - 2rem);
+  margin-top: 1rem;
+}
+
+#rsvp {
+  margin-top: 2rem;
+}
+
+#rsvp-image {
+  background-image: url(../images/sign.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;  
+  display: inline-block;  
+  height: 2.5em;
+  width: 100px;
+  position: absolute;
+  top: -1.5em;
 }
 
 #woodstock-image {
@@ -249,13 +272,20 @@ input[type="text"] {
 
   #main-invite {
     background-size: auto 40%;
-    padding-top: 5vh;
+    padding-top: 10%;
+    animation: floating-bg 30s linear infinite;
   }
 
   #details {
     flex-direction: column;
+    gap: 0px;
   }
   
+  #details p {
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+
   #woodstock-image {
     min-height: 125px;
     height: calc(100% - 1rem);
@@ -264,6 +294,7 @@ input[type="text"] {
 
 @media (max-width: 768px) {
   #snoopy {
+    margin-top: 2rem;
     max-width: 280px;
   }
 
@@ -282,6 +313,10 @@ input[type="text"] {
 
   #rsvp {
     margin-top: 0;
+  }
+
+  #rsvp-image {
+    right: 1em;
   }
 
   .mobile-only {
