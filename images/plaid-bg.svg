@@ -11,36 +11,40 @@
       }
 
       .cls-2 {
-        fill: #eca;
-      }
-
-      .cls-3 {
-        opacity: .14;
-      }
-
-      .cls-4 {
         fill: none;
       }
 
-      .cls-5 {
+      .cls-3 {
         fill: #fff;
         mix-blend-mode: screen;
+      }
+
+      .cls-3, .cls-4 {
         opacity: .5;
+      }
+
+      .cls-4 {
+        fill: #c8e1f6;
+      }
+
+      .cls-5 {
+        fill: #4c352f;
+        opacity: .14;
       }
     </style>
     <pattern id="New_Pattern_Swatch_1" data-name="New Pattern Swatch 1" x="0" y="0" width="139.79" height="175.57" patternTransform="translate(-833.66 983.68)" patternUnits="userSpaceOnUse" viewBox="0 0 139.79 175.57">
       <g>
-        <rect class="cls-4" width="139.79" height="175.57"/>
-        <rect class="cls-2" x="0" y="0" width="139.79" height="175.57"/>
+        <rect class="cls-2" width="139.79" height="175.57"/>
+        <rect class="cls-4" x="0" y="0" width="139.79" height="175.57"/>
         <g>
-          <rect class="cls-3" x="53.6" y="0" width="34.31" height="175.57"/>
-          <rect class="cls-5" x="28.73" y="0" width="10.19" height="175.57"/>
-          <rect class="cls-5" x="100.88" y="0" width="10.19" height="175.57"/>
+          <rect class="cls-5" x="53.6" y="0" width="34.31" height="175.57"/>
+          <rect class="cls-3" x="28.73" y="0" width="10.19" height="175.57"/>
+          <rect class="cls-3" x="100.88" y="0" width="10.19" height="175.57"/>
         </g>
         <g>
-          <polygon class="cls-3" points="0 105.22 0 70.91 139.79 70.91 139.79 105.22 0 105.22"/>
-          <polygon class="cls-5" points="0 56.87 0 46.68 139.79 46.68 139.79 56.87 0 56.87"/>
-          <polygon class="cls-5" points="0 129.02 0 118.84 139.79 118.84 139.79 129.02 0 129.02"/>
+          <polygon class="cls-5" points="0 105.22 0 70.91 139.79 70.91 139.79 105.22 0 105.22"/>
+          <polygon class="cls-3" points="0 56.87 0 46.68 139.79 46.68 139.79 56.87 0 56.87"/>
+          <polygon class="cls-3" points="0 129.02 0 118.84 139.79 118.84 139.79 129.02 0 129.02"/>
         </g>
       </g>
     </pattern>

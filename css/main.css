@@ -68,8 +68,9 @@ h3 {
 }
 
 p {
-  letter-spacing: 0.08em;
   font-family: 'Genice Writing', sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1;
 }
 
 a {
@@ -95,7 +96,7 @@ section {
   border: 2px solid var(--pale-yellow);
   margin: 1rem 0;
   color: var(--dark-brown);
-  padding: calc(var(--section-padding) * 1.25) var(--section-padding) 0;
+  padding: calc(var(--section-padding) * 1.25) var(--section-padding);
 }
 
 .title {
@@ -111,6 +112,7 @@ section {
   background-size: auto 45%;
   background-position: center 1em;
   padding-top: 5%;
+  padding-bottom: 0;
   animation: floating-bg 60s linear infinite;
 }
 
@@ -155,7 +157,7 @@ section {
   background-image: url(../images/woodstock.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center bottom;
+  background-position: center 1em;
   height: calc(100%);
 }
 
@@ -256,7 +258,6 @@ input[type="text"] {
   
   #woodstock-image {
     min-height: 125px;
-    margin-right: -2em;
     height: calc(100% - 1rem);
   }
 }
