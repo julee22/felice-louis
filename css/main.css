@@ -137,10 +137,10 @@ section {
 
 @keyframes floating-bg {
   0% {
-    background-position-x: 100vw;
+    background-position-x: 0vw;
   }
   100% {
-    background-position-x: 0vw;
+    background-position-x: 100vw;
   }
 }
 
@@ -309,6 +309,10 @@ input[type="text"] {
   
   .radio-wrapper {
     flex-wrap: wrap;
+  }
+
+  #registry {
+    text-align: center;
   }
 }
 
