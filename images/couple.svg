@@ -62,7 +62,7 @@
             attributeName="transform"
             type="rotate"
             values="0 75 235; 8 75 235; 0 75 235"
-            dur="2s"
+            dur="1s"
             repeatCount="indefinite"
           />
         </g>
