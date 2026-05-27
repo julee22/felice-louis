@@ -1,55 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1136.98 1759.01">
   <defs>
-    <style>
-      .cls-1 {
-        fill: url(#New_Pattern_Swatch_1);
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        fill: #6f8b9b;
-      }
-
-      .cls-2, .cls-4 {
-        opacity: .5;
-      }
-
-      .cls-3 {
-        fill: none;
-      }
-
-      .cls-4 {
-        fill: #fff;
-        mix-blend-mode: screen;
-      }
-
-      .cls-5 {
-        fill: #4c352f;
-        opacity: .14;
-      }
-    </style>
     <pattern id="New_Pattern_Swatch_1" data-name="New Pattern Swatch 1" x="0" y="0" width="139.79" height="175.57" patternTransform="translate(-833.66 983.68)" patternUnits="userSpaceOnUse" viewBox="0 0 139.79 175.57">
       <g>
-        <rect class="cls-3" width="139.79" height="175.57"/>
-        <rect class="cls-2" x="0" y="0" width="139.79" height="175.57"/>
+        <rect width="139.79" height="175.57" style="fill: none; stroke-width: 0px;"/>
+        <rect x="0" y="0" width="139.79" height="175.57" style="fill: #6f8bb8; opacity: .5; stroke-width: 0px;"/>
         <g>
-          <rect class="cls-5" x="53.6" y="0" width="34.31" height="175.57"/>
-          <rect class="cls-4" x="28.73" y="0" width="10.19" height="175.57"/>
-          <rect class="cls-4" x="100.88" y="0" width="10.19" height="175.57"/>
+          <rect x="53.6" y="0" width="34.31" height="175.57" style="fill: #4c352f; opacity: .14; stroke-width: 0px;"/>
+          <rect x="28.73" y="0" width="10.19" height="175.57" style="fill: #fff; mix-blend-mode: screen; opacity: .5; stroke-width: 0px;"/>
+          <rect x="100.88" y="0" width="10.19" height="175.57" style="fill: #fff; mix-blend-mode: screen; opacity: .5; stroke-width: 0px;"/>
         </g>
         <g>
-          <polygon class="cls-5" points="0 105.22 0 70.91 139.79 70.91 139.79 105.22 0 105.22"/>
-          <polygon class="cls-4" points="0 56.87 0 46.68 139.79 46.68 139.79 56.87 0 56.87"/>
-          <polygon class="cls-4" points="0 129.02 0 118.84 139.79 118.84 139.79 129.02 0 129.02"/>
+          <polygon points="0 105.22 0 70.91 139.79 70.91 139.79 105.22 0 105.22" style="fill: #4c352f; opacity: .14; stroke-width: 0px;"/>
+          <polygon points="0 56.87 0 46.68 139.79 46.68 139.79 56.87 0 56.87" style="fill: #fff; mix-blend-mode: screen; opacity: .5; stroke-width: 0px;"/>
+          <polygon points="0 129.02 0 118.84 139.79 118.84 139.79 129.02 0 129.02" style="fill: #fff; mix-blend-mode: screen; opacity: .5; stroke-width: 0px;"/>
         </g>
       </g>
     </pattern>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
-    <rect class="cls-1" width="1136.98" height="1759.01"/>
+    <rect width="1136.98" height="1759.01" style="fill: url(#New_Pattern_Swatch_1); stroke-width: 0px;"/>
   </g>
 </svg>
