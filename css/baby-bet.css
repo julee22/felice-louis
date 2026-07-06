@@ -34,7 +34,7 @@ p, ol li {
     background: var(--bg-white);
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 1em;
     background-color: var(--off-white);
 }
 
@@ -43,12 +43,6 @@ p, ol li {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.calendar-header h2 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: var(--text-dark);
 }
 
 .nav-btn {
@@ -62,9 +56,9 @@ p, ol li {
 }
 
 .nav-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
+    background-color: var(--pale-yellow);
+    color: var(--dark-brown);
+    border-color: var(--pale-yellow);
 }
 
 .weekdays-grid {
@@ -90,7 +84,7 @@ p, ol li {
   align-items: center;
   cursor: pointer;
   font-size: 0.9rem;
-  color: var(--text-dark);
+  color: var(--dark-brown);
   transition: background 0.2s ease;
   font-weight: bold;
   border-radius: 6px;
