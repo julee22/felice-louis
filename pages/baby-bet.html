@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://felice-louis.webflow.io/ -->
+<html class=" w-mod-js w-mod-ix">
+
+<head>   
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .wf-force-outline-none[tabindex="-1"]:focus {
+            outline: none;
+        }
+    </style>
+    <title>Louis and Felice's Baby Shower</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- Standard Social Preview -->
+    <meta property="og:image" content="https://www.image2url.com/r2/default/images/1779865241502-0a5fbab2-a391-48b3-9175-3a93f9e4ae4b.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="..//css/baby-bet.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./images/genice-designs-logo.jpg">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
+</head>
+
+<body class="body">
+    <div class="container">
+        <section class="yellow text-center">
+            <div id="woodstock-image">
+                <object
+                    data="../images/woodstock.svg"
+                    type="image/svg+xml"
+                ></object>
+            </div>
+            <h1 class="mb-4">When will Peanut Zhang arrive?</h1>
+            <p class="mb-2"><strong>BETTING RULES</strong></p>
+            <ol class="rules">
+                <li>Guess when the baby will be born.</li>
+                <li>You may only guess once.</li>
+                <li>Each guess costs $2.</li>
+                <li>No refunds or bet changes!</li>
+                <li>All who guessed the correct date will split the pot.</li>
+            </ol>
+            <p>We will announce the winners when our little peanut arrives!</p>
+            <p class="small">(The boxes below represent existing bets for each date)</p>
+        </section>
+        <div class="row">
+            <div class="col-12">
+                <section class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="nav-btn" id="prev-btn">&lt;</button>
+                        <h2 id="month-year-display"></h2>
+                        <button class="nav-btn" id="next-btn">&gt;</button>
+                    </div>
+                    
+                    <div class="weekdays-grid">
+                        <div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div>
+                    </div>
+                    
+                    <div class="days-grid" id="days-container"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="bet-heading">Guesses for this</h3>
+                </div>
+                <div class="modal-body">
+                    <ul id="list-of-names"></ul>
+                    <form action="" id="my-form">
+                        <label for="Guest" class="mb-1">Want to bet on this date? Enter your name below:</label>
+                        <div class="input-group">
+                            <input id="Guest" type="text" class="form-control " name="Guest" placeholder="Your full name" required>
+                        </div>
+                        <button class="btn btn-default mt-2 mb-2" onclick="addBet(); reset();">Place your bet ($2)</button>
+                    </form>
+                    <p class="success-message yellow p-3 small" id="success-msg" style="display: none;">Thanks for participating, <span id="guesser"></span>! We'll let you know if you win.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="../js/baby-bet.js"  type="text/javascript"></script>
+</body>
+
+</html>

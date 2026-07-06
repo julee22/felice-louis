@@ -3,12 +3,13 @@
   --pale-yellow : #fff3b5;
   --pale-blue : #bcbfc5;
   --dark-brown : #4c352f;
+  --pale-red: #fdcaca;
 }
 
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -69,7 +70,7 @@ h3 {
   font-size: 14pt;
 }
 
-p {
+p , ol li {
   font-family: 'Genice Writing', sans-serif;
   letter-spacing: 0.03em;
   line-height: 1;

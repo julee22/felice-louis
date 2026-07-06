@@ -1,0 +1,136 @@
+@import "main.css";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7f6;
+    margin: 0;
+}
+
+#woodstock-image object {
+  max-height: 125px;
+}
+
+.rules {
+  background-color: white;
+  padding: 10px 0px;
+}
+
+ol {
+  text-align: center;
+  list-style-position: inside;
+  padding: 0;
+}
+
+p, ol li {
+  font-size: 18px;
+}
+
+.calendar-container {
+    width: 100%;
+    background: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: var(--off-white);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.nav-btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.weekdays-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day-cell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  transition: background 0.2s ease;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.day-cell:not(.empty):not(.adjacent-month):hover {
+  background-color: #e0e0e0;
+}
+
+.day-cell.empty {
+  background-color: var(--pale-yellow); /* Fallback color */
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--pale-yellow),
+    var(--pale-yellow) 10px,
+    #ffffff 10px,
+    #ffffff 20px
+  );
+  color: var(--text-light);
+}
+
+.day-cell.adjacent-month {
+  color: white;
+  cursor: default;
+}
+
+.day-cell.today {
+  background-color: var(--pale-yellow);
+}
+
+.existing-bet-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+}
+
+.existing-bet {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 3;
+}
