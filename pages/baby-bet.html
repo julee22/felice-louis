@@ -32,10 +32,9 @@
             <p class="mb-2"><strong>BETTING RULES</strong></p>
             <ol class="rules">
                 <li>Guess when the baby will be born.</li>
-                <li>You may only guess once.</li>
-                <li>Each guess costs $2.</li>
-                <li>No refunds or bet changes!</li>
-                <li>All who guessed the correct date will split the pot.</li>
+                <li>Select the date and enter your name.</li>
+                <li>You may only place a bet once.</li>
+                <li>You cannot change your bet!</li>
             </ol>
             <p>We will announce the winners when our little peanut arrives!</p>
             <p class="small mb-0">(The boxes below represent existing bets for each date)</p>
@@ -65,11 +64,11 @@
                 <div class="modal-body">
                     <ul id="list-of-names"></ul>
                     <form action="" id="my-form">
-                        <label for="Guest" class="mb-1">Want to bet on this date? Enter your name below:</label>
+                        <label for="Guest" class="mb-1">Want to bet on this date? Enter your first name and the first initial of your last name:</label>
                         <div class="input-group">
-                            <input id="Guest" type="text" class="form-control " name="Guest" placeholder="Your full name" required>
+                            <input id="Guest" type="text" class="form-control " name="Guest" placeholder="First name and initial of last name" required>
                         </div>
-                        <button class="btn btn-default mt-2 mb-2" onclick="addBet(); reset();">Place your bet ($2)</button>
+                        <button class="btn btn-default mt-2 mb-2" onclick="addBet(); reset();">Place your bet</button>
                     </form>
                     <p class="success-message yellow p-3 small" id="success-msg" style="display: none;">Thanks for participating, <span id="guesser"></span>! We'll let you know if you win.</p>
                 </div>

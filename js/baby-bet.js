@@ -7,7 +7,7 @@ var bet = {
 let betList = JSON.parse(localStorage.getItem("betList")) || [{
     month: 9,
     day: 17,
-    nameList: ["Genice"],
+    nameList: ["Genice C"],
   }
 ];
 
