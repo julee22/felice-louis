@@ -38,10 +38,10 @@ window.addEventListener("load", function() {
 $(document).ready(function () {
   $('[data-toggle="modal"]').on('click', function () {
     console.log('clicked TEST');
-    $('#myModal').modal('show');
+    $('#directions').modal('show');
   });
   $('[data-dismiss="modal"]').on('click', function () {
     console.log('clicked hide');
-    $('#myModal').modal('hide');
+    $('#directions').modal('hide');
   });
 });
