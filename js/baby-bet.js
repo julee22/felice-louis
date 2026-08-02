@@ -6,7 +6,7 @@ var bet = {
 
 let betList = JSON.parse(localStorage.getItem("betList")) || [{
     month: 9,
-    day: 17,
+    day: 12,
     nameList: ["Genice C"],
   }
 ];
@@ -81,7 +81,8 @@ function renderCalendar() {
       createDayCell(day, "adjacent-month");
   }
 
-  if (currentDate.getMonth() <= 6) {
+  // Prevent from going before current month and no more than September
+  if (currentDate.getMonth() == today.getMonth()) {
     prevBtn.disabled = true;
     nextBtn.disabled = false;
   } else if (currentDate.getMonth() >= 9) {
@@ -167,7 +168,7 @@ nextBtn.addEventListener("click", () => {
 function showBetModal() {
   $('#myModal').modal('show');
   const heading = document.getElementById("bet-heading");
-  heading.innerHTML = monthNames[selectedMonth-1] + " " + selectedDay + ", 2026";
+  heading.innerHTML = "Guesses for " + monthNames[selectedMonth-1] + " " + selectedDay + ", 2026";
   listBets(selectedMonth, selectedDay);
 }
 
