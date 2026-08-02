@@ -21,22 +21,24 @@
 
 <body class="body">
     <div class="container">
-        <section class="yellow text-center">
+        <section class="yellow ">
             <div id="woodstock-image">
                 <object
                     data="../images/woodstock.svg"
                     type="image/svg+xml"
                 ></object>
             </div>
-            <h1 class="mb-4">When is Peanut coming?</h1>
-            <p class="mb-2"><strong>Instructions</strong></p>
-            <ol class="rules">
-                <li>Select a date and enter your name.</li>
-                <li>You may only place a bet once and cannot change your bet!</li>
-                <li>Save a photo of the QR code.</li>
-            </ol>
-            <p>Use the QR code to check if our peanut has arrived on the day of your guess!</p>
-            <img src="../images/qrcode_julee22.github.io.png" alt="" width="150px">
+            <h1 class="mb-4 text-center">When is Peanut coming?</h1>
+            <div class="row justify-content-center rules">
+                <div class="col-11 ">
+                    <p class=""><strong>Instructions</strong></p>
+                    <ol>
+                        <li>Select a date and enter your name.</li>
+                        <li>You may only place a bet once and cannot change your bet!</li>
+                        <li>Take a photo of the QR code to save for later.</li>
+                    </ol>
+                </div>
+            </div>
         </section>
         <section class="calendar-container">
             <p class="small text-center">(The boxes below represent existing bets for each date)</p>
@@ -52,6 +54,10 @@
             
             <div class="days-grid" id="days-container"></div>
         </section>
+        <section class="text-center">
+            <p class="mb-0">Use the QR code to check if our peanut has arrived on the day of your guess!</p>
+        </section>
+        <img src="../images/qrcode_julee22.github.io.png" alt="" width="150px" class="d-block m-auto mb-5">
     </div>
 
     <div class="modal fade" id="myModal" role="dialog">

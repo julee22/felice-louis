@@ -19,11 +19,10 @@ body {
 
 .rules {
   background-color: white;
-  padding: 10px 0px;
+  padding-top: 15px;
 }
 
 ol {
-  text-align: center;
   list-style-position: inside;
   padding: 0;
 }
