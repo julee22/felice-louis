@@ -10,6 +10,9 @@ body {
     margin: 0;
 }
 
+#woodstock-image {
+  margin-bottom: 50px;
+}
 #woodstock-image object {
   max-height: 125px;
 }
@@ -36,6 +39,13 @@ p, ol li {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 1em;
     background-color: var(--off-white);
+}
+
+@media (max-width: 480px) {
+  .calendar-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .calendar-header {
