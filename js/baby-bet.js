@@ -4,11 +4,7 @@ var bet = {
   nameList: [],
 };
 
-let betList = JSON.parse(localStorage.getItem("betList")) || [{
-    month: 9,
-    day: 12,
-    nameList: ["Genice C"],
-  }
+let betList = JSON.parse(localStorage.getItem("betList")) || [{month:9,day:12,nameList:["Genice C","Sara DAgostini","Hugo "]},{month:9,day:19,nameList:["Jinny","Chris zucc"]},{month:9,day:13,nameList:["Jessica ekasalim","Jimmy T."]},{month:9,day:17,nameList:["Julia","AT T"]},{month:9,day:9,nameList:["Michael w","Sofia D"]},{month:9,day:11,nameList:["Nick","Robby"]},{month:9,day:27,nameList:["Geoff r"]},{month:9,day:18,nameList:["Stef AJ","Paula zucc","Eva W","Alan L","Fifi"]},{month:9,day:10,nameList:["Gloria","Stephanie "]},{month:9,day:15,nameList:["Aana strozo","Eddy M","Lie tjie","Mei ling c."]},{month:9,day:16,nameList:["Jashinta M.","Matteo d"]},{month:9,day:8,nameList:["Sarina H"]},{month:9,day:14,nameList:["Audrina W","Hoei"]},{month:9,day:7,nameList:["Aveline W"]},{month:9,day:24,nameList:["Elisabeth"]}
 ];
 
 const listNames = document.getElementById("list-of-names");
